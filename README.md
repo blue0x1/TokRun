@@ -1,5 +1,8 @@
 # TokRun v1.0
 
+<img width="2172" height="724" alt="image" src="https://github.com/user-attachments/assets/2496e1e7-0dfb-4bf6-a839-7d1d4f3b4aa9" />
+
+
 TokRun is a local Windows token-based process launcher for authorized administration, lab, and red-team environments.
 
 It enumerates accessible process tokens on the host, selects a token by user name or PID, duplicates it as a primary token, and launches either a visible `cmd.exe` shell or a target executable under that token.
