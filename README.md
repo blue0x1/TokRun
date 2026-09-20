@@ -6,6 +6,8 @@ It enumerates accessible process tokens on the host, selects a token by user nam
 
 TokRun does not dump credentials, dump LSASS, create new logon sessions from passwords, install persistence, or disable security products. The target identity must already have an accessible token on the machine.
 
+<img width="857" height="204" alt="image" src="https://github.com/user-attachments/assets/b4b943b8-cb16-4b00-9a5c-96c649c519ce" />
+
 ## Status
 
 This is the initial v1.0 build.
@@ -196,7 +198,7 @@ For Windows Terminal discovery, TokRun checks:
 - `SearchPath` / `PATH`
 - `HKCU\Software\Microsoft\Windows\CurrentVersion\App Paths\wt.exe`
 - `HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\wt.exe`
-- `C:\Program Files\WindowsApps\Microsoft.WindowsTerminal_*__8wekyb3d8bbwe\wt.exe`
+- `C:\Program Files\WindowsApps\Microsoft.WindowsTerminal_*__xxxxx\wt.exe`
 
 ## Required Privileges
 
@@ -215,7 +217,7 @@ TokRun attempts to enable common privileges automatically when they are assigned
 
 - The target user must already have a token on the host.
 - TokRun cannot create a token without credentials.
-- URL paths and UNC/share paths are rejected for `--run`; use local executable paths only.
+- UNC/share paths are rejected for `--run`; use local executable paths only.
 - Some protected processes deny token access even from an elevated shell.
 - Visible shells depend on Windows session, desktop, terminal, and privilege behavior.
 - Remote execution is out of scope; TokRun launches local processes only.
