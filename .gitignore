@@ -1,0 +1,10 @@
+.agents/
+.vs/
+bin/
+obj/
+TokRun/bin/
+TokRun/obj/
+*.user
+*.suo
+*.cache
+*.log
