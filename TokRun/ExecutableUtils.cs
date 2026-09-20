@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: Apache-2.0
+// Copyright (c) 2026 Chokri Hammedi
+
 using System;
 using System.IO;
 using System.Text;
